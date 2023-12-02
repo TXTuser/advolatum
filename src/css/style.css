@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1650px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: linear-gradient(180deg, #51647B 9.93%, #798088 100%);
+    font-family: 'Unbounded', sans-serif;
+}
+
+body a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* HEADER-start */
+
+header {
+    padding-top: 40px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left-side-top a:hover {
+    color: #D1C12B;
+}
+
+.header-left-side-bottom a:hover {
+    color: #D1C12B;
+}
+
+header a {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.header-left-side-top {
+    display: flex;
+    margin-bottom: 25px;
+    align-items: flex-end;
+}
+
+.header-left-side-top a {
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.header-left-side-bottom {
+    margin-left: 80px;
+}
+
+.header-left-side-bottom a {
+    font-size: 10px;
+    padding: 10px 30px;
+}
+
+.header-right-side {
+    display: flex;
+    align-items: flex-end;
+    height: 51px;
+}
+
+.header-right-side a {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* HEADER-end */
+
+/* HERO-start */
+
+.hero {
+    margin-top: 135px;
+}
+
+.hero .container {
+    text-align: center;
+}
+
+.hero-title-main {
+    position: relative;
+    font-size: 80px;
+    color: white;
+    margin-top: 40px;
+    line-height: 60px;
+    text-shadow: -5px 0 3px #D1C12B, 5px 0 5px #A232CA;
+}
+
+.hero-title-behind {
+    z-index: -1;
+    color: #454a50;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    font-size: 100px;
+    line-height: 80px;
+    top: 50%;
+    text-shadow: none;
+}
+
+/* HERO-end */
