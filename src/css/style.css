@@ -124,4 +124,67 @@ header a {
     text-shadow: none;
 }
 
+.hero-underhero-text {
+    margin-top: 50px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.golden-btn {
+    border: 1px solid #D1C12B;
+    border-radius: 50px;
+    padding: 10px 14px;
+    text-shadow: 0 0 5px #D1C12B;
+    color: #D1C12B;
+}
+
+.golden-btn:hover {
+    background-color: #D1C12B;
+    color: white;
+    transition: 1s;
+}
+
+.golden-btn:hover img {
+    filter: brightness(300%);
+    transition: 1s;
+}
+
+.golden-btn img {
+    margin-right: 10px;
+    filter: drop-shadow(0 0 5px #D1C12B);
+    transition: 1s;
+}
+
+.hero-katalog-container {
+    text-align: right;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
 /* HERO-end */
+
+/* season-start */
+
+.season-title-main {
+    position: relative;
+    font-size: 60px;
+    color: white;
+    margin-top: 40px;
+    line-height: 60px;
+}
+
+.season-title-behind {
+    z-index: -1;
+    color: #454a50;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    font-size: 100px;
+    line-height: 80px;
+    top: 50%;
+    text-shadow: none;
+    width: 100%;
+}
+
+/* season-end */
