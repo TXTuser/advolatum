@@ -11,14 +11,11 @@
     margin: auto;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     min-height: 100%;
-    background: linear-gradient(180deg, #51647B 9.93%, #798088 100%);
+    /* background: linear-gradient(180deg, #51647B 9.93%, #798088 100%); */
     font-family: 'Unbounded', sans-serif;
+    background: linear-gradient(180deg, #0E141C 0%, #0A0F14 100%);
 }
 
 body a {
@@ -136,6 +133,7 @@ header a {
     padding: 10px 14px;
     text-shadow: 0 0 5px #D1C12B;
     color: #D1C12B;
+    display: inline-block;
 }
 
 .golden-btn:hover {
@@ -185,6 +183,50 @@ header a {
     top: 50%;
     text-shadow: none;
     width: 100%;
+}
+
+.season-slider {
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+
+.season-slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 600px;
+    text-align: center;
+    position: relative;
+}
+
+.season-slide-info {
+    width: 300px;
+    position: relative;
+    padding-right: 100px;
+    padding-bottom: 110px;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.season-arrow {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    height: 40px;
+    display: block;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.season-line {
+    text-align: center;
 }
 
 /* season-end */
