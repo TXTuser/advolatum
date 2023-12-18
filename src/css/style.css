@@ -134,6 +134,7 @@ header a {
     text-shadow: 0 0 5px #D1C12B;
     color: #D1C12B;
     display: inline-block;
+    font-size: 20px;
 }
 
 .golden-btn:hover {
@@ -187,17 +188,21 @@ header a {
 
 .season-slider {
     position: relative;
-    margin: auto;
-    width: 80%;
+    font-size: 0;
+    white-space: nowrap;
+    transform: translateX(0);
+    transition: 1s;
 }
 
 .season-slide {
-    display: flex;
+    position: relative;
+    display: inline-flex;
     justify-content: flex-end;
     align-items: flex-end;
     height: 600px;
     text-align: center;
-    position: relative;
+    width: 100%;
+    white-space: normal;
 }
 
 .season-slide-info {
@@ -227,6 +232,32 @@ header a {
 
 .season-line {
     text-align: center;
+}
+
+.season-line a {
+    opacity: 0.3;
+    transition: 1s;
+}
+
+.season-line .active-line {
+    opacity: 1;
+}
+
+.season-line a:hover {
+    opacity: 1;
+}
+
+.season-slide-info p {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.slider-container {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 80%;
 }
 
 /* season-end */
