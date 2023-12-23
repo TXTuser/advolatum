@@ -11,11 +11,17 @@
     margin: auto;
 }
 
+/* html {
+    height: 100%;
+} */
+
 body {
     min-height: 100%;
     /* background: linear-gradient(180deg, #51647B 9.93%, #798088 100%); */
     font-family: 'Unbounded', sans-serif;
     background: linear-gradient(180deg, #0E141C 0%, #0A0F14 100%);
+    /* background-size: cover;
+    background-repeat: no-repeat; */
 }
 
 body a {
@@ -86,8 +92,6 @@ header a {
     justify-content: center;
 }
 
-
-
 /* HEADER-end */
 
 /* HERO-start */
@@ -111,7 +115,7 @@ header a {
 
 .hero-title-behind {
     z-index: -1;
-    color: #454a50;
+    color: #454a504b;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.2);
@@ -168,18 +172,20 @@ header a {
 .season-title-main {
     position: relative;
     font-size: 60px;
+    padding-left: 25px;
     color: white;
     margin-top: 40px;
     line-height: 60px;
+    margin-bottom: 100px;
 }
 
 .season-title-behind {
     z-index: -1;
-    color: #454a50;
+    color: #454a504b;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
-    font-size: 100px;
+    transform: translate(-50%, -50%);
+    font-size: 180px;
     line-height: 80px;
     top: 50%;
     text-shadow: none;
@@ -261,3 +267,84 @@ header a {
 }
 
 /* season-end */
+
+/* actual-start */
+
+.actual-title-main {
+    position: relative;
+    font-size: 60px;
+    color: white;
+    margin-top: 40px;
+    line-height: 60px;
+    text-align: right;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.actual-title-behind {
+    z-index: -1;
+    color: #454a504b;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    line-height: 80px;
+    top: 50%;
+    text-shadow: none;
+    font-size: 180px;
+}
+
+.actual-block {
+    text-align: center;
+    font-size: 0;
+    margin-bottom: 70px;
+}
+
+.actual-block-card {
+    background-color: #10171F;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.575);
+    width: calc((100% - 150px) / 4);
+    font-size: 20px;
+}
+
+.actual-block-card:first-child {
+    margin-left: 0;
+}
+
+.actual-block-card:last-child {
+    margin-right: 0;
+}
+
+.actual-block-card>p {
+    margin-top: 5px;
+}
+
+.actual-block-card img {
+    width: 100%;
+}
+
+.actual-block-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.actual a {
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.actual a:hover {
+    color: #D1C12B;
+    text-decoration: none;
+}
+
+.actual .container {
+    text-align: right;
+}
+
+/* actual-end */
