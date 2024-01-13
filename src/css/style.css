@@ -404,7 +404,7 @@ footer {
 footer .container {
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -412,6 +412,10 @@ footer .container {
     display: flex;
     font-size: 15px;
     gap: 20px;
+}
+
+.footer-center-side {
+    margin-right: 150px;
 }
 
 /* footer-end */

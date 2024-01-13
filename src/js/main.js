@@ -27,3 +27,10 @@ for (let line of seasonLines) {
     slider.style.transform = "translateX(-" + counter + "00%)";
   });
 }
+
+function categoryClick(event) {
+  document.querySelector(".categoryActive").classList.remove("categoryActive");
+  document.querySelector(".arrowActive").classList.remove("arrowActive");
+  event.target.querySelector("img").classList.add("arrowActive");
+  event.target.classList.add("categoryActive");
+}
