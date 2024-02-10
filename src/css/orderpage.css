@@ -99,6 +99,24 @@ header a {
     position: relative;
 }
 
+.order-container-form {
+    flex-basis: 30%;
+    border-left: 3px solid #1F252D;
+    box-sizing: border-box;
+    padding-left: 25px;
+}
+
+.order  > .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-prod-list {
+    /* width: 70%; */
+    flex-basis: 60%;
+    /* border-right: 3px solid #1F252D; */
+}
+
 .order-title-behind {
     z-index: -1;
     color: #454a504b;
@@ -110,5 +128,152 @@ header a {
     text-shadow: none;
     font-size: 180px;
 }
+
+.order-info {
+    flex: 1;
+    text-align: left;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.order-info form {
+    display: flex;
+    align-items: center;
+}
+
+.order-info>p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.order-prod-list-card {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #10171F;
+    box-shadow: 5px 5px 10px #10171F;
+    margin-bottom: 15px;
+}
+
+.order-prod-list-card img {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    object-fit: cover;
+}
+
+.plusminus {
+    align-items: center;
+    display: flex;
+    margin-right: 45px;
+}
+
+.plusminus button {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.size {
+    margin-right: 32px;
+}
+
+.order-prod-list-price {
+    text-align: right;
+}
+
+.order-prod-list-price>p {
+    color: #3B4654;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.order-bottom-side {
+    justify-content: flex-end;
+    gap: 60px;
+    display: flex;
+}
+
+.order-bottom-side p {
+    margin-bottom: 30px;
+}
+
+.license {
+    display: inline-flex;
+    background-color: #10171F;
+    border-radius: 15px;
+    color: white;
+    padding: 11px 30px 11px 15px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.licensetwo {
+    margin-top: 10px;
+}
+
+.license label {
+    padding-left: 15px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.license input[type='checkbox'] {
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+.order-container-form > p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.contact-number {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.order-container-form input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: #10171F;
+    color: #3B4654;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px black;
+    border: none;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.order-data-delivery {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.order-item {
+    margin-bottom: 13px;
+}
+
+.order-data {
+    color: #3B4654;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.order-sum {}
 
 /* order-end */

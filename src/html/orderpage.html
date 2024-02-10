@@ -38,69 +38,126 @@
 
     <section class="order">
         <div class="container">
-            <span class="order-title-behind">Корзина</span>
+            <!-- <span class="order-title-behind">Корзина</span> -->
 
             <div class='order-prod-list'>
                 <div class="order-prod-list-card">
                     <img src="/src/img/actual-card.png" alt="">
-                    <div class="">
-                        <p></p>
-                        <div>
-                            <p>Размер:</p>
-                            <div>
+                    <div class="order-info">
+                        <p>Костюм Advolatum - соцветие</p>
+                        <form>
+                            <p class="size">Размер: M</p>
+                            <div class="plusminus">
                                 <p>Кол-во:</p>
-                                <button>-</button>
+                                <button type="button" class="minus">–</button>
                                 <p>1</p>
-                                <button>+</button>
+                                <button type="button" class="plus">+</button>
                             </div>
-                            <p>Стоимость:</p>
-                        </div>
+                            <p>Стоимость:<span class="price">1000</span> ₽</p>
+                        </form>
                     </div>
                 </div>
-                <div class="order-prod-list-card"></div>
+
+                <div class="order-prod-list-card">
+                    <img src="/src/img/actual-card.png" alt="">
+                    <div class="order-info">
+                        <p>Костюм Advolatum - соцветие</p>
+                        <form>
+                            <p class="size">Размер: M</p>
+                            <div class="plusminus">
+                                <p>Кол-во:</p>
+                                <button type="button" class="minus">–</button>
+                                <p>1</p>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                            <p>Стоимость: <span class="price">1000</span> ₽</p>
+                        </form>
+                    </div>
+                </div>
 
                 <div class="order-prod-list-price">
                     <p>Сумма доставки будет расчитана после ввода <br>
                         данных о месте назначения - город, улица</p>
-                    <p>Доставка:</p>
-                    <p>Итого:</p>
+                    <div class="order-bottom-side">
+                        <div class="order-result">
+                            <p>Доставка:</p>
+                            <p>Итого:</p>
+                        </div>
+                        <div class="order-sum">
+                            <p><span>500</span> ₽</p>
+                            <p><span id="allSum">2500</span>₽</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="licension">
+
+                <div class="license">
                     <input type="checkbox" id="checkbox">
-                    <label for="checkbox">Согласие <br>
+                    <label for="checkbox" class="checkbox-bottom">Согласие <br>
                         на обработку<br>
                         персональных данных</label>
                 </div>
             </div>
 
-            <form action="">
-                <p></p>
-                <p></p>
+            <form action="" class="order-container-form">
+                <p class="order-item">Оформление заказа</p>
+                <p class="order-data">данные получателя</p>
                 <input type="text" placeholder="Фамилия">
                 <input type="text" placeholder="Имя">
                 <input type="text" placeholder="Отчество">
-                <p>контактный номер телефона</p>
+                <p class="contact-number">контактный номер телефона</p>
                 <input type="text" placeholder="+7(   )   -  -  ">
-                <p>данные места доставки</p>
-                <input type="text" placeholder="город">
+                <p class="order-data-delivery">данные места доставки</p>
+                <input type="text" placeholder="Город">
                 <input type="text" placeholder="Улица">
                 <input type="text" placeholder="Дом">
-                <input type="text" placeholder="Кв/Офис">
-                <input type="checkbox" id="payment">
-                <label for="payment">Согласие <br>
-                    на обработку<br>
-                    персональных данных</label>
-                <input type="checkbox" id="cash">
-                <label for="cash">Согласие <br>
-                    на обработку<br>
-                    персональных данных</label>
-                <div class="hero-katalog-container">
-                    <a href="#/" class="golden-btn"><img src="/src/img/kataloglogo.svg" alt="">Оформить</a>
+                <input type="text" placeholder="Кв / Офис">
+                <div class="license licensetwo">
+                    <input type="checkbox" id="checkbox-online">
+                    <label for="checkbox-online" class="checkbox-bottom">оплата <br>
+                        online</label>
+                </div>
+                <div class="license licensetwo">
+                    <input type="checkbox" id="checkbox-payment">
+                    <label for="checkbox-payment" class="checkbox-bottom">наложенным <br>
+                        платежом</label>
                 </div>
             </form>
-
         </div>
+        <div class="hero-katalog-container">
+            <div class="container">
+                <a href="#/" class="golden-btn"><img src="/src/img/kataloglogo.svg" alt="">Оформить</a>
+            </div>
+            </div>
     </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-left-side">
+                <p>политика конфиденциальности <br>
+                    согласие на обработку персональных данных</p>
+            </div>
+            <div class="footer-center-side">
+                <div><img src="/src/img/Лого.svg" alt=""></div>
+                <div class="footer-center-side-bottom">
+                    <div>
+                        <p>2022</p>
+                    </div>
+                    <div>
+                        <p>GruboGovorya</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right-side">
+                <a href="#/"><img src="/src/img/tg.svg" alt=""></a>
+                <a href="#/"><img src="/src/img/vk.svg" alt=""></a>
+                <a href="#/"><img src="/src/img/tt.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/orderPage.js"></script>
 </body>
 
 </html>

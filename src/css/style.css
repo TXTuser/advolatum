@@ -1,95 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1650px;
-    box-sizing: border-box;
-    margin: auto;
+  max-width: 1650px;
+  box-sizing: border-box;
+  margin: auto;
 }
+
+/* .container:not(.header-container) {
+    display: none;
+} */
 
 /* html {
     height: 100%;
 } */
 
+html {
+    overflow: hidden;
+}
+
 body {
-    min-height: 100%;
-    /* background: linear-gradient(180deg, #51647B 9.93%, #798088 100%); */
-    font-family: 'Unbounded', sans-serif;
-    background: linear-gradient(180deg, #0E141C 0%, #0A0F14 100%);
-    /* background-size: cover;
+  min-height: 100%;
+  /* background: linear-gradient(180deg, #51647B 9.93%, #798088 100%); */
+  font-family: "Unbounded", sans-serif;
+  background: linear-gradient(180deg, #0e141c 0%, #0a0f14 100%);
+  /* background-size: cover;
     background-repeat: no-repeat; */
 }
 
 body a {
-    text-decoration: none;
-    color: #FFFFFF;
+  text-decoration: none;
+  color: #ffffff;
 }
-
 
 /* HEADER-start */
 
 header {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-left-side-top a:hover {
-    color: #D1C12B;
+  color: #d1c12b;
 }
 
 .header-left-side-bottom a:hover {
-    color: #D1C12B;
+  color: #d1c12b;
 }
 
 header a {
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
 }
 
 .header-left-side-top {
-    display: flex;
-    margin-bottom: 25px;
-    align-items: flex-end;
+  display: flex;
+  margin-bottom: 25px;
+  align-items: flex-end;
 }
 
 .header-left-side-top a {
-    font-size: 15px;
-    padding: 10px 15px;
+  font-size: 15px;
+  padding: 10px 15px;
 }
 
 .header-left-side-bottom {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 .header-left-side-bottom a {
-    font-size: 10px;
-    padding: 10px 30px;
+  font-size: 10px;
+  padding: 10px 30px;
 }
 
 .header-right-side {
-    display: flex;
-    align-items: flex-end;
-    height: 51px;
+  display: flex;
+  align-items: flex-end;
+  height: 51px;
 }
 
 .header-right-side a {
-    height: 32px;
-    width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* HEADER-end */
@@ -97,173 +105,172 @@ header a {
 /* HERO-start */
 
 .hero {
-    margin-top: 135px;
+  margin-top: 135px;
 }
 
 .hero .container {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-title-main {
-    position: relative;
-    font-size: 80px;
-    color: white;
-    margin-top: 40px;
-    line-height: 60px;
-    text-shadow: -5px 0 3px #D1C12B, 5px 0 5px #A232CA;
+  position: relative;
+  font-size: 80px;
+  color: white;
+  margin-top: 40px;
+  line-height: 60px;
+  text-shadow: -5px 0 3px #d1c12b, 5px 0 5px #a232ca;
 }
 
 .hero-title-behind {
-    z-index: -1;
-    color: #454a504b;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
-    font-size: 100px;
-    line-height: 80px;
-    top: 50%;
-    text-shadow: none;
+  z-index: -1;
+  color: #454a504b;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  font-size: 100px;
+  line-height: 80px;
+  top: 50%;
+  text-shadow: none;
 }
 
 .hero-underhero-text {
-    margin-top: 50px;
-    font-size: 15px;
-    color: #fff;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #fff;
 }
 
 .golden-btn {
-    border: 1px solid #D1C12B;
-    border-radius: 50px;
-    padding: 10px 14px;
-    text-shadow: 0 0 5px #D1C12B;
-    color: #D1C12B;
-    display: inline-block;
-    font-size: 20px;
+  border: 1px solid #d1c12b;
+  border-radius: 50px;
+  padding: 10px 14px;
+  text-shadow: 0 0 5px #d1c12b;
+  color: #d1c12b;
+  display: inline-block;
+  font-size: 20px;
 }
 
 .golden-btn:hover {
-    background-color: #D1C12B;
-    color: white;
-    transition: 1s;
+  background-color: #d1c12b;
+  color: white;
+  transition: 1s;
 }
 
 .golden-btn:hover img {
-    filter: brightness(300%);
-    transition: 1s;
+  filter: brightness(300%);
+  transition: 1s;
 }
 
 .golden-btn img {
-    margin-right: 10px;
-    filter: drop-shadow(0 0 5px #D1C12B);
-    transition: 1s;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 5px #d1c12b);
+  transition: 1s;
 }
 
 .hero-katalog-container {
-    text-align: right;
-    margin-top: 150px;
-    margin-bottom: 100px;
+  text-align: right;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
-
 
 /* HERO-end */
 
 /* season-start */
 
 .season-title-main {
-    position: relative;
-    font-size: 60px;
-    padding-left: 25px;
-    color: white;
-    margin-top: 40px;
-    line-height: 60px;
-    margin-bottom: 100px;
+  position: relative;
+  font-size: 60px;
+  padding-left: 25px;
+  color: white;
+  margin-top: 40px;
+  line-height: 60px;
+  margin-bottom: 100px;
 }
 
 .season-title-behind {
-    z-index: -1;
-    color: #454a504b;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 180px;
-    line-height: 80px;
-    top: 50%;
-    text-shadow: none;
-    width: 100%;
+  z-index: -1;
+  color: #454a504b;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 180px;
+  line-height: 80px;
+  top: 50%;
+  text-shadow: none;
+  width: 100%;
 }
 
 .season-slider {
-    position: relative;
-    font-size: 0;
-    white-space: nowrap;
-    transform: translateX(0);
-    transition: 1s;
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+  transform: translateX(0);
+  transition: 1s;
 }
 
 .season-slide {
-    position: relative;
-    display: inline-flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 600px;
-    text-align: center;
-    width: 100%;
-    white-space: normal;
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 600px;
+  text-align: center;
+  width: 100%;
+  white-space: normal;
 }
 
 .season-slide-info {
-    width: 300px;
-    position: relative;
-    padding-right: 100px;
-    padding-bottom: 110px;
+  width: 300px;
+  position: relative;
+  padding-right: 100px;
+  padding-bottom: 110px;
 }
 
 .slide-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
 .season-arrow {
-    position: absolute;
-    z-index: 5;
-    bottom: 0;
-    height: 40px;
-    display: block;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  height: 40px;
+  display: block;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
 .season-line {
-    text-align: center;
+  text-align: center;
 }
 
 .season-line a {
-    opacity: 0.3;
-    transition: 1s;
+  opacity: 0.3;
+  transition: 1s;
 }
 
 .season-line .active-line {
-    opacity: 1;
+  opacity: 1;
 }
 
 .season-line a:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .season-slide-info p {
-    color: #FFFFFF;
-    margin-bottom: 15px;
-    font-size: 15px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 15px;
 }
 
 .slider-container {
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    width: 80%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 80%;
 }
 
 /* season-end */
@@ -271,85 +278,85 @@ header a {
 /* actual-start */
 
 .actual-title-main {
-    position: relative;
-    font-size: 60px;
-    color: white;
-    margin-top: 40px;
-    line-height: 60px;
-    text-align: right;
-    margin-top: 100px;
-    margin-bottom: 150px;
+  position: relative;
+  font-size: 60px;
+  color: white;
+  margin-top: 40px;
+  line-height: 60px;
+  text-align: right;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .actual-title-behind {
-    z-index: -1;
-    color: #454a504b;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
-    line-height: 80px;
-    top: 50%;
-    text-shadow: none;
-    font-size: 180px;
+  z-index: -1;
+  color: #454a504b;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  line-height: 80px;
+  top: 50%;
+  text-shadow: none;
+  font-size: 180px;
 }
 
 .actual-block {
-    text-align: center;
-    font-size: 0;
-    margin-bottom: 70px;
+  text-align: center;
+  font-size: 0;
+  margin-bottom: 70px;
 }
 
 .actual-block-card {
-    background-color: #10171F;
-    border-radius: 10px;
-    color: white;
-    display: inline-block;
-    overflow: hidden;
-    margin: 0 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.575);
-    width: calc((100% - 150px) / 4);
-    font-size: 20px;
-    transition: 1s;
+  background-color: #10171f;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.575);
+  width: calc((100% - 150px) / 4);
+  font-size: 20px;
+  transition: 1s;
 }
 
 .actual-block-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .actual-block-card:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .actual-block-card:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.actual-block-card>p {
-    margin-top: 5px;
+.actual-block-card > p {
+  margin-top: 5px;
 }
 
 .actual-block-card img {
-    width: 100%;
+  width: 100%;
 }
 
 .actual-block-card-bottom {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 .actual a {
-    text-decoration: underline;
-    transition: .5s;
+  text-decoration: underline;
+  transition: 0.5s;
 }
 
 .actual a:hover {
-    color: #D1C12B;
-    text-decoration: none;
+  color: #d1c12b;
+  text-decoration: none;
 }
 
 .actual .container {
-    text-align: right;
+  text-align: right;
 }
 
 /* actual-end */
@@ -357,40 +364,40 @@ header a {
 /* map-start */
 
 .map {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .map-title-main {
-    position: relative;
-    font-size: 60px;
-    color: white;
-    margin-top: 40px;
-    line-height: 60px;
-    margin-top: 100px;
-    margin-bottom: 150px;
+  position: relative;
+  font-size: 60px;
+  color: white;
+  margin-top: 40px;
+  line-height: 60px;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .map-title-behind {
-    z-index: -1;
-    color: #454a504b;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
-    line-height: 80px;
-    top: 50%;
-    text-shadow: none;
-    font-size: 220px;
+  z-index: -1;
+  color: #454a504b;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  line-height: 80px;
+  top: 50%;
+  text-shadow: none;
+  font-size: 220px;
 }
 
 .map-block {
-    display: flex;
-    color: white;
-    font-size: 25px;
+  display: flex;
+  color: white;
+  font-size: 25px;
 }
 
 .map-contact {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 /* map-end */
@@ -398,24 +405,218 @@ header a {
 /* footer-start */
 
 footer {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 footer .container {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .footer-center-side-bottom {
-    display: flex;
-    font-size: 15px;
-    gap: 20px;
+  display: flex;
+  font-size: 15px;
+  gap: 20px;
 }
 
 .footer-center-side {
-    margin-right: 150px;
+  margin-right: 150px;
 }
 
 /* footer-end */
+
+@media (max-width: 600px) {
+    header {
+        padding: 0;
+        z-index: 10;
+        top: 0;
+        background-color: #0d131b;
+        width: 100%;
+        position: fixed;
+    }
+
+    .header-right-side {
+        align-items: center;
+    }   
+
+    #burger {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #gamburger span, #gamburger span::before, #gamburger span::after{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #D1C12B;
+        width: 60%;
+        height: 2px;
+        position: absolute;
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    #gamburger span::before {
+        content: '';
+        width: 100%;
+        top: 4px;
+    }
+
+    #gamburger span::after {
+        content: '';
+        width: 100%;
+        top: -2px;
+        
+    }
+
+    #burger:checked ~ label span {
+        transform:translate(-50%, -50%) rotate(45deg);
+    }
+
+    #burger:checked ~ #mob-menu {
+        top: 50px;
+        opacity: 1;
+    }
+
+    #burger:checked ~ label span::before {
+        top: 0;
+        transform:translate(-50%, -50%) rotate(-90deg);
+    }
+
+    #burger:checked ~ label span::after {
+        top: 0;
+        opacity: 0;
+        /* transform: rotate(0); */
+    }
+
+    label {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+.header-left-side {
+    display: none;
+  }
+  
+  #mob-menu {
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    background-color: #0d131b;
+  }
+
+  #mob-menu a {
+    display: block;
+    line-height: 60px;
+  }
+
+  .hero {
+    padding-top: 50px;
+  }
+
+  .hero-title-main {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .hero-title-behind {
+    font-size: 40px;
+    line-height: 40px;
+  }
+.hero-underhero-text {
+  font-size: 15px;
+  opacity: 0.3;
+}
+
+.season-title-main {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.season-title-behind {
+  font-size: 70px;
+  line-height: 60px;
+}
+
+.season-slide {
+  height: 400px;
+}
+
+
+
+.slider-container {
+  width: 100%;
+  text-align:  center;
+}
+
+.season-line {
+  font-size: 0;
+}
+
+.season-line img {
+  margin-top: 20px;
+  width: 90%;
+}
+
+.season-line a {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+
+.season-slide-info {
+  display: none;
+}
+
+.season-arrow {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.actual-title-main {
+  font-size: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.actual-title-behind {
+  font-size: 90px;
+  line-height: 60px;
+  overflow-wrap: break-word;
+  width: 100%;
+  transform:translate(-50%, -50%) scale(1);
+}
+
+.actual-block-card {
+  width: calc(50% - 20px);
+  margin: 10px;
+  white-space: normal;
+}
+
+.actual-block {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.actual-block-card-bottom {
+  display: block;
+}
+
+.actual-watchmore {
+  display: none;
+}
+
+.map-title-main {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.map-title-behind {
+display: none;
+}
+
+}
